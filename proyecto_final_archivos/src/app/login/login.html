@@ -1,0 +1,56 @@
+
+<div class="login-contenedor">
+  <div class="envoltorio">
+<p-toggleswitch [(ngModel)]="modoOscuro" (ngModelChange)="botonModoOscuro()"></p-toggleswitch>
+    <div [ngClass]="modoOscuro ? 'icon-luna' : 'icon-sol'" class="cambiar-icono"></div>
+</div>
+</div>
+
+<div [ngClass]="modoOscuro ? 'titulo-oscuro' : 'titulo-claro'" class="titulo-login">
+  <h1>{{ modoOscuro ? '🌙🌠 Welcome back! 🌠🌙' : '🌈🌤️ Welcome back! 🌤️🌈' }}</h1>
+  <p>Please enter your details</p>
+</div>
+
+<div class="campo-contenedor" [ngClass]="modoOscuro ? 'campo-oscuro' : 'campo-claro'">
+  <div class="campo-lineal">
+    <label for="username">{{ modoOscuro ? '🪼Email' : '️🔅Email' }}</label>
+    <input id="username" pInputText [(ngModel)]="value" />
+  </div>
+</div>
+
+<div class="campo-contenedor" [ngClass]="modoOscuro ? 'campo-oscuro' : 'campo-claro'">
+  <div class="campo-lineal">
+    <label for="password">{{modoOscuro ? '🪼Password': '🔅Password'}}</label>
+    <p-password [(ngModel)]="password" [toggleMask]="false" />
+  </div>
+</div>
+
+<div class="boton-contenedor">
+  <button pButton  [ngClass]="modoOscuro ? 'boton-oscuro' : 'boton-claro'"
+          class="boton-login">
+    <span pButtonLabel>Login</span>
+  </button>
+</div>
+
+<div class="registro-lineal" [ngClass]="modoOscuro ? 'registro-oscuro' : 'registro-claro'">
+  <label for="signup">Don't have an account?</label>
+  <button
+    id="signup"
+    pButton
+    [ngClass]="modoOscuro ? 'boton-oscuro2' : 'boton-claro2'"
+    class="boton-signup"
+  >
+    Signup
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
