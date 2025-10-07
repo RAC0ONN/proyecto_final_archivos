@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { ThemeService } from '../theme';
+
 
 @Component({
   selector: 'app-login',
@@ -7,15 +9,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.css']
 })
 export class Login {
+  @Output() irASignup = new EventEmitter<void>();
   modoOscuro: boolean=false;
   value: string = '';
   password: string = '';
   texto: string = '';
-  botonModoOscuro(): void{
-  const html= document.querySelector('html');
-  html?.classList.toggle('modo-oscuro', this.modoOscuro);
-}
 
+  constructor(private themeService: ThemeService) {
+    this.modoOscuro = this.themeService.getModoOscuro();
+  }
 
+  botonModoOscuro(): void {
+    this.themeService.setModoOscuro(this.modoOscuro);
+  }
+
+  irARegistro(): void {
+    this.irASignup.emit();
+  }
 }
 

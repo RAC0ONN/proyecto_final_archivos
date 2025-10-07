@@ -36,9 +36,9 @@
   <label for="signup">Don't have an account?</label>
   <button
     id="signup"
-    pButton
+    pButton (click)="irASignup.emit()"
     [ngClass]="modoOscuro ? 'boton-oscuro2' : 'boton-claro2'"
-    class="boton-signup"
+    class="boton-signup" (click)="irARegistro()"
   >
     Signup
   </button>

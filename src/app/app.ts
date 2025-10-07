@@ -7,5 +7,19 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('front1');
+
+  mostrarLogin=true;
+
+  cambiarARegistro(){
+    this.mostrarLogin=false;
+  }
+
+  cambiarALogin(){
+    this.mostrarLogin=true;
+  }
+
+
+
+
+
 }

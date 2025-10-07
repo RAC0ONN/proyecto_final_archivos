@@ -6,4 +6,5 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-login></app-login>
+<app-login  *ngIf="mostrarLogin" (irASignup)="cambiarARegistro()"></app-login>
+<app-signup *ngIf="!mostrarLogin" (irALogin)="cambiarALogin()"></app-signup>

@@ -1,0 +1,231 @@
+.login-contenedor{
+  margin-top:100px;
+  margin-left: 80px;
+  text-align: left;
+}
+.envoltorio{
+  position: relative;
+  display: inline-block;
+}
+.cambiar-icono{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+}
+p-toggleswitch{
+  transform: scale(6.5);
+}
+
+.icon-sol{
+  background-image: url('/assets/solecito.png');
+}
+.icon-luna{
+  background-image: url('/assets/lunita.png');
+}
+
+.titulo-login {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.titulo-login h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.titulo-login p {
+  font-size: 20px;
+}
+
+
+.titulo-claro h1,
+.titulo-claro p {
+  color: #291012;
+}
+
+
+.titulo-oscuro h1,
+.titulo-oscuro p {
+  color: #8887E0;
+}
+
+.campo-contenedor {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.campo-contenedor p-floatlabel {
+  width: 360px;
+  display: inline-block;
+}
+
+.campo-contenedor input {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 14px 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.campo-contenedor label {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+.campo-claro input {
+  background-color: #E3A97D
+;
+  color: #291012;
+  border: 1px solid #ccc;
+}
+
+.campo-claro label {
+  color: #291012;
+}
+
+.campo-oscuro input {
+  background-color: #513E70;
+  color: #000000;
+  border: 1px solid #8887E0;
+}
+
+.campo-oscuro label {
+  color: #8887E0;
+}
+.campo-lineal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.campo-lineal label {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 100px;
+  text-align: right;
+}
+
+
+.campo-lineal input {
+  flex: 1;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+
+
+::ng-deep .campo-claro .p-password input.p-inputtext {
+  background-color: #E3A97D ;
+  color: #291012 ;
+  border: 1px solid #ccc ;
+  height: 50px ;
+  width: 305px;
+  border-radius: 8px ;
+  font-size: 18px ;
+  font-weight: bold ;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+::ng-deep .campo-oscuro .p-password input.p-inputtext {
+  background-color: #513E70 ;
+  color: #000000 ;
+  border: 1px solid #8887E0 ;
+  height: 50px ;
+  width: 305px;
+  border-radius: 8px ;
+  font-size: 18px ;
+  font-weight: bold ;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.boton-contenedor {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.boton-login {
+  width: 180px;
+  height: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.boton-claro {
+  background-color: #F7A6B5;
+  color: #291012;
+}
+
+
+.boton-oscuro {
+  background-color:
+    #E8C687;
+  color: #000000;
+}
+
+.registro-lineal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+
+.registro-lineal label {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 180px;
+  text-align: right;
+}
+
+
+.boton-signup {
+
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+
+.boton-claro2 {
+  background-color: #619163;
+  color: #291012;
+}
+
+.boton-oscuro2 {
+  background-color: #F7A6B5;
+  color: #000000;
+}
+
+

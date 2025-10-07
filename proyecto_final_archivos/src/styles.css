@@ -1,0 +1,12 @@
+body{
+  background-color:#6076D1;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+html.modo-oscuro body{
+  background-color:#12193B;
+  color: #FFFFFF;
+
+}
+
+

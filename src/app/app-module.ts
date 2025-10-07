@@ -11,12 +11,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { DividerModule } from 'primeng/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Signup } from './signup/signup';
 
 
 @NgModule({
   declarations: [
     App,
-    Login
+    Login,
+    Signup
   ],
   imports: [
     BrowserModule,
